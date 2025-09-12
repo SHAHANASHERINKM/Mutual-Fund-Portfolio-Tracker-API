@@ -179,42 +179,45 @@ Response:
   }
 }
 ```
-### Current Portfolio List
+## Current Portfolio List
+
+
 **GET** `http://localhost:5000/api/portfolio/value`
 
-Response:
+Response: 
 ```json
 {
-    "success": true,
-    "data": {
-        "totalInvestment": 6144.1,
-        "currentValue": 6144.1,
-        "profitLoss": 0,
-        "profitLossPercent": 0,
-        "asOn": "29-05-2008",
-        "holdings": [
-            {
-                "schemeCode": 100031,
-                "schemeName": "Grindlays Super Saver Income Fund-GSSIF - ST-Dividend",
-                "units": 200,
-                "currentNav": 20,
-                "currentValue": 4000,
-                "investedValue": 4000,
-                "profitLoss": 0
-            },
-            {
-                "schemeCode": 100027,
-                "schemeName": "Grindlays Super Saver Income Fund-GSSIF-Half Yearly Dividend",
-                "units": 200,
-                "currentNav": 10.7205,
-                "currentValue": 2144.1,
-                "investedValue": 2144.1,
-                "profitLoss": 0
-            }
-        ]
-    }
+  "success": true,
+  "data": {
+    "totalInvestment": 6144.1,
+    "currentValue": 6144.1,
+    "profitLoss": 0,
+    "profitLossPercent": 0,
+    "asOn": "29-05-2008",
+    "holdings": [
+      {
+        "schemeCode": 100031,
+        "schemeName": "Grindlays Super Saver Income Fund-GSSIF - ST-Dividend",
+        "units": 200,
+        "currentNav": 20,
+        "currentValue": 4000,
+        "investedValue": 4000,
+        "profitLoss": 0
+      },
+      {
+        "schemeCode": 100027,
+        "schemeName": "Grindlays Super Saver Income Fund-GSSIF-Half Yearly Dividend",
+        "units": 200,
+        "currentNav": 10.7205,
+        "currentValue": 2144.1,
+        "investedValue": 2144.1,
+        "profitLoss": 0
+      }
+    ]
+  }
 }
 ```
+
 
 ### Get Portfolio History
 **GET** ` http://localhost:5000/api/portfolio/history?startDate=01-02-2006&endDate=01-02-2008`
