@@ -636,10 +636,17 @@ Response:
 
 ## 📤 Deployment Guide
 - Deploy backend to **Render**, **Railway**, or **Vercel**  
-- Set environment variables in hosting panel  
-- Use monitoring (e.g., Logtail, Datadog) for logs & errors  
+- Set environment variables in the hosting panel  
+- Use monitoring tools (e.g., **Logtail**, **Datadog**) for logs & error tracking  
 
 ---
 
 ## Postman Collection
-A full **Postman Collection** (`mutual-fund-portfolio-api.postman_collection.json`) is included for testing all endpoints.
+A full **Postman Collection** (`mutual-fund-portfolio-api.postman_collection.json`) is included for testing all endpoints.  
+
+### Import Instructions
+1. Open **Postman**.
+2. Go to **File → Import**.
+3. Select the file `mutual-fund-portfolio-api.postman_collection.json`.
+4. The collection will now appear in your Postman sidebar.
+5. You can start testing the APIs directly.
