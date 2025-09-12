@@ -1,0 +1,419 @@
+{
+	"info": {
+		"_postman_id": "f4ce433e-ea5e-4d0d-bd19-94432d526431",
+		"name": "mutual-fund-portfolio-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42486631"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/api/auth/signup",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"email\": \"doe@example.com\",\r\n  \"password\": \"SecurePass@123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{http://localhost:5000}}/api/auth/signup",
+					"host": [
+						"{{http://localhost:5000}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/auth/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"john@example.com\",\r\n  \"password\": \"SecurePass@123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{http://localhost:5000}}/api/auth/login",
+					"host": [
+						"{{http://localhost:5000}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/portfolio/add",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YzQxZWQ2ZjAxOGRiYzY0MWIwZmIzMiIsImlhdCI6MTc1NzY4NDUyMiwiZXhwIjoxNzU4Mjg5MzIyfQ.10YyLFJKdIcGZy3lO1YkbvQO--sLxN-zx9vUJ-eDhBo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YzQxZWQ2ZjAxOGRiYzY0MWIwZmIzMiIsImlhdCI6MTc1NzY4NDUyMiwiZXhwIjoxNzU4Mjg5MzIyfQ.10YyLFJKdIcGZy3lO1YkbvQO--sLxN-zx9vUJ-eDhBo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"schemeCode\": 103455,\r\n\"units\": 200\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{http://localhost:5000}}/api/portfolio/add",
+					"host": [
+						"{{http://localhost:5000}}"
+					],
+					"path": [
+						"api",
+						"portfolio",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/portfolio/add",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YzQxZWQ2ZjAxOGRiYzY0MWIwZmIzMiIsImlhdCI6MTc1NzY4NDUyMiwiZXhwIjoxNzU4Mjg5MzIyfQ.10YyLFJKdIcGZy3lO1YkbvQO--sLxN-zx9vUJ-eDhBo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YzQxZWQ2ZjAxOGRiYzY0MWIwZmIzMiIsImlhdCI6MTc1NzY4NDUyMiwiZXhwIjoxNzU4Mjg5MzIyfQ.10YyLFJKdIcGZy3lO1YkbvQO--sLxN-zx9vUJ-eDhBo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"schemeCode\": 100027,\r\n\"units\": 200\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{http://localhost:5000}}/api/portfolio/add",
+					"host": [
+						"{{http://localhost:5000}}"
+					],
+					"path": [
+						"api",
+						"portfolio",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/portfolio/list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YzQxZWQ2ZjAxOGRiYzY0MWIwZmIzMiIsImlhdCI6MTc1NzY4NDUyMiwiZXhwIjoxNzU4Mjg5MzIyfQ.10YyLFJKdIcGZy3lO1YkbvQO--sLxN-zx9vUJ-eDhBo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YzQxZWQ2ZjAxOGRiYzY0MWIwZmIzMiIsImlhdCI6MTc1NzY4NDUyMiwiZXhwIjoxNzU4Mjg5MzIyfQ.10YyLFJKdIcGZy3lO1YkbvQO--sLxN-zx9vUJ-eDhBo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{http://localhost:5000}}/api/portfolio/list",
+					"host": [
+						"{{http://localhost:5000}}"
+					],
+					"path": [
+						"api",
+						"portfolio",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/portfolio/value",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YzQxZWQ2ZjAxOGRiYzY0MWIwZmIzMiIsImlhdCI6MTc1NzY4NDUyMiwiZXhwIjoxNzU4Mjg5MzIyfQ.10YyLFJKdIcGZy3lO1YkbvQO--sLxN-zx9vUJ-eDhBo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YzQxZWQ2ZjAxOGRiYzY0MWIwZmIzMiIsImlhdCI6MTc1NzY4NDUyMiwiZXhwIjoxNzU4Mjg5MzIyfQ.10YyLFJKdIcGZy3lO1YkbvQO--sLxN-zx9vUJ-eDhBo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{http://localhost:5000}}/api/portfolio/value",
+					"host": [
+						"{{http://localhost:5000}}"
+					],
+					"path": [
+						"api",
+						"portfolio",
+						"value"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/portfolio/history?startDate=01-02-2006&endDate=01-02-2008",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YzQxZWQ2ZjAxOGRiYzY0MWIwZmIzMiIsImlhdCI6MTc1NzY4NDUyMiwiZXhwIjoxNzU4Mjg5MzIyfQ.10YyLFJKdIcGZy3lO1YkbvQO--sLxN-zx9vUJ-eDhBo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YzQxZWQ2ZjAxOGRiYzY0MWIwZmIzMiIsImlhdCI6MTc1NzY4NDUyMiwiZXhwIjoxNzU4Mjg5MzIyfQ.10YyLFJKdIcGZy3lO1YkbvQO--sLxN-zx9vUJ-eDhBo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"schemeCode\": 100037,\r\n  \"units\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{http://localhost:5000}}/api/portfolio/history?startDate=01-02-2006&endDate=01-02-2008",
+					"host": [
+						"{{http://localhost:5000}}"
+					],
+					"path": [
+						"api",
+						"portfolio",
+						"history"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "01-02-2006"
+						},
+						{
+							"key": "endDate",
+							"value": "01-02-2008"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/portfolio/remove/100027",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YzQxZWQ2ZjAxOGRiYzY0MWIwZmIzMiIsImlhdCI6MTc1NzY4NDUyMiwiZXhwIjoxNzU4Mjg5MzIyfQ.10YyLFJKdIcGZy3lO1YkbvQO--sLxN-zx9vUJ-eDhBo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YzQxZWQ2ZjAxOGRiYzY0MWIwZmIzMiIsImlhdCI6MTc1NzY4NDUyMiwiZXhwIjoxNzU4Mjg5MzIyfQ.10YyLFJKdIcGZy3lO1YkbvQO--sLxN-zx9vUJ-eDhBo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"schemeCode\": 100037,\r\n  \"units\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{http://localhost:5000}}/api/portfolio/remove/100027",
+					"host": [
+						"{{http://localhost:5000}}"
+					],
+					"path": [
+						"api",
+						"portfolio",
+						"remove",
+						"100027"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/funds",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{http://localhost:5000}}/api/funds",
+					"host": [
+						"{{http://localhost:5000}}"
+					],
+					"path": [
+						"api",
+						"funds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/funds?search=bluechip&page=1&limit=5",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{http://localhost:5000}}/api/funds?search=bluechip&page=1&limit=5",
+					"host": [
+						"{{http://localhost:5000}}"
+					],
+					"path": [
+						"api",
+						"funds"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "bluechip"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "http://localhost:5000",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
