@@ -49,7 +49,7 @@ npm install
 Create a `.env` file in the root directory:
 
 ```env
-MONGO_URI="mongodb+srv://kmshahanasherin_db_user:mutualfund@ cluster0.5mit7by.mongodb.net/"
+MONGO_URI=your_mongodb_connection_string
 PORT=5000
 JWT_SECRET=secret-jwt
 JWT_EXPIRES_IN=24h
