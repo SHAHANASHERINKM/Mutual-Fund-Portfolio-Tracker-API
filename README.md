@@ -221,6 +221,7 @@ Response:
 
 ### Get Portfolio History
 **GET** ` http://localhost:5000/api/portfolio/history?startDate=01-02-2006&endDate=01-02-2008`
+
 Response:
 ```json
 {
@@ -239,228 +240,232 @@ Response:
 ### Remove Fund from Portfolio
 
 **DELETE** ` http://localhost:5000/api/portfolio/remove/100027`
+
 Response:
 ```json
 {
-    "success": true,
-    "message": "Fund removed from portfolio successfully"
+  "success": true,
+  "message": "Fund removed from portfolio successfully"
 }
+
 ```
 
 ## Fund APIs
 
 ### List All Funds
 **GET** `http://localhost:5000/api/funds`
+
 Response:
 ```json
-{
-    "success": true,
-    "data": {
-        "funds": [
-            {
-                "_id": "68c2da1085c57f2d0fde3ddd",
-                "schemeCode": 100027,
-                "fundHouse": "",
-                "schemeCategory": "",
-                "schemeName": "Grindlays Super Saver Income Fund-GSSIF-Half Yearly Dividend",
-                "schemeType": ""
-            },
-            {
-                "_id": "68c2da1085c57f2d0fde3dde",
-                "schemeCode": 100028,
-                "fundHouse": "",
-                "schemeCategory": "",
-                "schemeName": "Grindlays Super Saver Income Fund-GSSIF-Quaterly Dividend",
-                "schemeType": ""
-            },
-            {
-                "_id": "68c2da1085c57f2d0fde3ddf",
-                "schemeCode": 100029,
-                "fundHouse": "",
-                "schemeCategory": "",
-                "schemeName": "Grindlays Super Saver Income Fund-GSSIF-Growth",
-                "schemeType": ""
-            },
-            {
-                "_id": "68c2da1085c57f2d0fde3de0",
-                "schemeCode": 100030,
-                "fundHouse": "",
-                "schemeCategory": "",
-                "schemeName": "Grindlays Super Saver Income Fund-GSSIF-Annual Dividend",
-                "schemeType": ""
-            },
-            {
-                "_id": "68c2da1085c57f2d0fde3de1",
-                "schemeCode": 100031,
-                "fundHouse": "",
-                "schemeCategory": "",
-                "schemeName": "Grindlays Super Saver Income Fund-GSSIF - ST-Dividend",
-                "schemeType": ""
-            },
-            {
-                "_id": "68c2da1085c57f2d0fde3de2",
-                "schemeCode": 100032,
-                "fundHouse": "",
-                "schemeCategory": "",
-                "schemeName": "Grindlays Super Saver Income Fund-GSSIF - ST-Growth",
-                "schemeType": ""
-            },
-            {
-                "_id": "68c2da1185c57f2d0fde3de3",
-                "schemeCode": 100033,
-                "fundHouse": "",
-                "schemeCategory": "",
-                "schemeName": "Aditya Birla Sun Life Large & Mid Cap Fund - Regular Growth",
-                "schemeType": ""
-            },
-            {
-                "_id": "68c2da1185c57f2d0fde3de4",
-                "schemeCode": 100034,
-                "fundHouse": "",
-                "schemeCategory": "",
-                "schemeName": "Aditya Birla Sun Life Large & Mid Cap Fund -Regular - IDCW",
-                "schemeType": ""
-            },
-            {
-                "_id": "68c2da1185c57f2d0fde3de5",
-                "schemeCode": 100035,
-                "fundHouse": "",
-                "schemeCategory": "",
-                "schemeName": "Birla Sun Life Freedom Fund-Plan A (Dividend)",
-                "schemeType": ""
-            },
-            {
-                "_id": "68c2da1185c57f2d0fde3de6",
-                "schemeCode": 100036,
-                "fundHouse": "",
-                "schemeCategory": "",
-                "schemeName": "Birla Sun Life Freedom Fund-Plan B (Growth)",
-                "schemeType": ""
-            },
-            {
-                "_id": "68c2da1185c57f2d0fde3de7",
-                "schemeCode": 100037,
-                "fundHouse": "",
-                "schemeCategory": "",
-                "schemeName": "Aditya Birla Sun Life Income Fund - Regular - Quarterly IDCW",
-                "schemeType": ""
-            },
-            {
-                "_id": "68c2da1185c57f2d0fde3de8",
-                "schemeCode": 100038,
-                "fundHouse": "",
-                "schemeCategory": "",
-                "schemeName": "Aditya Birla Sun Life Income Fund - Growth - Regular Plan",
-                "schemeType": ""
-            },
-            {
-                "_id": "68c2da1185c57f2d0fde3de9",
-                "schemeCode": 100041,
-                "fundHouse": "",
-                "schemeCategory": "",
-                "schemeName": "Aditya Birla Sun Life Liquid Fund -Institutional - IDCW",
-                "schemeType": ""
-            },
-            {
-                "_id": "68c2da1285c57f2d0fde3dea",
-                "schemeCode": 100042,
-                "fundHouse": "",
-                "schemeCategory": "",
-                "schemeName": "Aditya Birla Sun Life Liquid Fund-Retail (Growth)",
-                "schemeType": ""
-            },
-            {
-                "_id": "68c2da1285c57f2d0fde3deb",
-                "schemeCode": 100043,
-                "fundHouse": "",
-                "schemeCategory": "",
-                "schemeName": "Aditya Birla Sun Life Liquid Fund-Institutional (Growth)",
-                "schemeType": ""
-            },
-            {
-                "_id": "68c2da1285c57f2d0fde3dec",
-                "schemeCode": 100044,
-                "fundHouse": "",
-                "schemeCategory": "",
-                "schemeName": "Aditya Birla Sun Life Liquid Fund -Retail - IDCW",
-                "schemeType": ""
-            },
-            {
-                "_id": "68c2da1285c57f2d0fde3ded",
-                "schemeCode": 100046,
-                "fundHouse": "",
-                "schemeCategory": "",
-                "schemeName": "Aditya Birla Sun Life Liquid Fund -Daily IDCW",
-                "schemeType": ""
-            },
-            {
-                "_id": "68c2da1285c57f2d0fde3dee",
-                "schemeCode": 100047,
-                "fundHouse": "",
-                "schemeCategory": "",
-                "schemeName": "Aditya Birla Sun Life Liquid Fund - Growth",
-                "schemeType": ""
-            },
-            {
-                "_id": "68c2da1285c57f2d0fde3def",
-                "schemeCode": 100048,
-                "fundHouse": "",
-                "schemeCategory": "",
-                "schemeName": "Aditya Birla Sun Life Liquid Fund -Institutional - weekly  IDCW",
-                "schemeType": ""
-            },
-            {
-                "_id": "68c2da1385c57f2d0fde3df0",
-                "schemeCode": 100049,
-                "fundHouse": "",
-                "schemeCategory": "",
-                "schemeName": "Aditya Birla Sun Life Cash Plus-Institutional - Fortnightly Dividend",
-                "schemeType": ""
-            }
-        ],
-        "pagination": {
-            "currentPage": 1,
-            "totalPages": 96,
-            "totalFunds": 1911,
-            "hasNext": true,
-            "hasPrev": false
-        }
-    }
+		{
+  "success": true,
+  "data": {
+    "funds": [
+      {
+        "_id": "68c2da1085c57f2d0fde3ddd",
+        "schemeCode": 100027,
+        "fundHouse": "",
+        "schemeCategory": "",
+        "schemeName": "Grindlays Super Saver Income Fund-GSSIF-Half Yearly Dividend",
+        "schemeType": ""
+      },
+      {
+        "_id": "68c2da1085c57f2d0fde3dde",
+        "schemeCode": 100028,
+        "fundHouse": "",
+        "schemeCategory": "",
+        "schemeName": "Grindlays Super Saver Income Fund-GSSIF-Quaterly Dividend",
+        "schemeType": ""
+      },
+      {
+        "_id": "68c2da1085c57f2d0fde3ddf",
+        "schemeCode": 100029,
+        "fundHouse": "",
+        "schemeCategory": "",
+        "schemeName": "Grindlays Super Saver Income Fund-GSSIF-Growth",
+        "schemeType": ""
+      },
+      {
+        "_id": "68c2da1085c57f2d0fde3de0",
+        "schemeCode": 100030,
+        "fundHouse": "",
+        "schemeCategory": "",
+        "schemeName": "Grindlays Super Saver Income Fund-GSSIF-Annual Dividend",
+        "schemeType": ""
+      },
+      {
+        "_id": "68c2da1085c57f2d0fde3de1",
+        "schemeCode": 100031,
+        "fundHouse": "",
+        "schemeCategory": "",
+        "schemeName": "Grindlays Super Saver Income Fund-GSSIF - ST-Dividend",
+        "schemeType": ""
+      },
+      {
+        "_id": "68c2da1085c57f2d0fde3de2",
+        "schemeCode": 100032,
+        "fundHouse": "",
+        "schemeCategory": "",
+        "schemeName": "Grindlays Super Saver Income Fund-GSSIF - ST-Growth",
+        "schemeType": ""
+      },
+      {
+        "_id": "68c2da1185c57f2d0fde3de3",
+        "schemeCode": 100033,
+        "fundHouse": "",
+        "schemeCategory": "",
+        "schemeName": "Aditya Birla Sun Life Large & Mid Cap Fund - Regular Growth",
+        "schemeType": ""
+      },
+      {
+        "_id": "68c2da1185c57f2d0fde3de4",
+        "schemeCode": 100034,
+        "fundHouse": "",
+        "schemeCategory": "",
+        "schemeName": "Aditya Birla Sun Life Large & Mid Cap Fund -Regular - IDCW",
+        "schemeType": ""
+      },
+      {
+        "_id": "68c2da1185c57f2d0fde3de5",
+        "schemeCode": 100035,
+        "fundHouse": "",
+        "schemeCategory": "",
+        "schemeName": "Birla Sun Life Freedom Fund-Plan A (Dividend)",
+        "schemeType": ""
+      },
+      {
+        "_id": "68c2da1185c57f2d0fde3de6",
+        "schemeCode": 100036,
+        "fundHouse": "",
+        "schemeCategory": "",
+        "schemeName": "Birla Sun Life Freedom Fund-Plan B (Growth)",
+        "schemeType": ""
+      },
+      {
+        "_id": "68c2da1185c57f2d0fde3de7",
+        "schemeCode": 100037,
+        "fundHouse": "",
+        "schemeCategory": "",
+        "schemeName": "Aditya Birla Sun Life Income Fund - Regular - Quarterly IDCW",
+        "schemeType": ""
+      },
+      {
+        "_id": "68c2da1185c57f2d0fde3de8",
+        "schemeCode": 100038,
+        "fundHouse": "",
+        "schemeCategory": "",
+        "schemeName": "Aditya Birla Sun Life Income Fund - Growth - Regular Plan",
+        "schemeType": ""
+      },
+      {
+        "_id": "68c2da1185c57f2d0fde3de9",
+        "schemeCode": 100041,
+        "fundHouse": "",
+        "schemeCategory": "",
+        "schemeName": "Aditya Birla Sun Life Liquid Fund -Institutional - IDCW",
+        "schemeType": ""
+      },
+      {
+        "_id": "68c2da1285c57f2d0fde3dea",
+        "schemeCode": 100042,
+        "fundHouse": "",
+        "schemeCategory": "",
+        "schemeName": "Aditya Birla Sun Life Liquid Fund-Retail (Growth)",
+        "schemeType": ""
+      },
+      {
+        "_id": "68c2da1285c57f2d0fde3deb",
+        "schemeCode": 100043,
+        "fundHouse": "",
+        "schemeCategory": "",
+        "schemeName": "Aditya Birla Sun Life Liquid Fund-Institutional (Growth)",
+        "schemeType": ""
+      },
+      {
+        "_id": "68c2da1285c57f2d0fde3dec",
+        "schemeCode": 100044,
+        "fundHouse": "",
+        "schemeCategory": "",
+        "schemeName": "Aditya Birla Sun Life Liquid Fund -Retail - IDCW",
+        "schemeType": ""
+      },
+      {
+        "_id": "68c2da1285c57f2d0fde3ded",
+        "schemeCode": 100046,
+        "fundHouse": "",
+        "schemeCategory": "",
+        "schemeName": "Aditya Birla Sun Life Liquid Fund -Daily IDCW",
+        "schemeType": ""
+      },
+      {
+        "_id": "68c2da1285c57f2d0fde3dee",
+        "schemeCode": 100047,
+        "fundHouse": "",
+        "schemeCategory": "",
+        "schemeName": "Aditya Birla Sun Life Liquid Fund - Growth",
+        "schemeType": ""
+      },
+      {
+        "_id": "68c2da1285c57f2d0fde3def",
+        "schemeCode": 100048,
+        "fundHouse": "",
+        "schemeCategory": "",
+        "schemeName": "Aditya Birla Sun Life Liquid Fund -Institutional - weekly  IDCW",
+        "schemeType": ""
+      },
+      {
+        "_id": "68c2da1385c57f2d0fde3df0",
+        "schemeCode": 100049,
+        "fundHouse": "",
+        "schemeCategory": "",
+        "schemeName": "Aditya Birla Sun Life Cash Plus-Institutional - Fortnightly Dividend",
+        "schemeType": ""
+      }
+    ],
+    "pagination": {
+      "currentPage": 1,
+      "totalPages": 96,
+      "totalFunds": 1911,
+      "hasNext": true,
+      "hasPrev": false
+    }
+  }
 }
 ```
 
 **GET** `http://localhost:5000/api/funds?search=bluechip&page=1&limit=5`
+
 Response:
 ```json
 {
-    "success": true,
-    "data": {
-        "funds": [
-            {
-                "_id": "68c2daf885c57f2d0fde44cb",
-                "schemeCode": 103455,
-                "fundHouse": "",
-                "schemeCategory": "",
-                "schemeName": "UTI Bluechip Flexicap Fund - Regular Plan - Dividend Option",
-                "schemeType": ""
-            },
-            {
-                "_id": "68c2daf985c57f2d0fde44cc",
-                "schemeCode": 103457,
-                "fundHouse": "",
-                "schemeCategory": "",
-                "schemeName": "UTI Bluechip Flexicap Fund - Regular Plan - Growth option",
-                "schemeType": ""
-            }
-        ],
-        "pagination": {
-            "currentPage": 1,
-            "totalPages": 1,
-            "totalFunds": 2,
-            "hasNext": false,
-            "hasPrev": false
-        }
-    }
+  "success": true,
+  "data": {
+    "funds": [
+      {
+        "_id": "68c2daf885c57f2d0fde44cb",
+        "schemeCode": 103455,
+        "fundHouse": "",
+        "schemeCategory": "",
+        "schemeName": "UTI Bluechip Flexicap Fund - Regular Plan - Dividend Option",
+        "schemeType": ""
+      },
+      {
+        "_id": "68c2daf985c57f2d0fde44cc",
+        "schemeCode": 103457,
+        "fundHouse": "",
+        "schemeCategory": "",
+        "schemeName": "UTI Bluechip Flexicap Fund - Regular Plan - Growth option",
+        "schemeType": ""
+      }
+    ],
+    "pagination": {
+      "currentPage": 1,
+      "totalPages": 1,
+      "totalFunds": 2,
+      "hasNext": false,
+      "hasPrev": false
+    }
+  }
 }
 ```
 
