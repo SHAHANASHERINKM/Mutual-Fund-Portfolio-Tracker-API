@@ -36,7 +36,7 @@ The system automatically updates NAV (Net Asset Value) daily using external APIs
 
 ### 1. Clone Repository
 ```bash
-git clone <[your-repo-url](https://github.com/SHAHANASHERINKM/Mutual-Fund-Portfolio-Tracker-API)>
+git clone https://github.com/SHAHANASHERINKM/Mutual-Fund-Portfolio-Tracker-API
 cd mutual-fund-portfolio-backend
 ```
 
