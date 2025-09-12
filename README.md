@@ -641,5 +641,5 @@ Response:
 
 ---
 
-## 📎 Postman Collection
-A full **Postman Collection** (`MutualFundPortfolio.postman_collection.json`) is included for testing all endpoints.
+## Postman Collection
+A full **Postman Collection** (`mutual-fund-portfolio-api.postman_collection.json`) is included for testing all endpoints.
