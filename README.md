@@ -224,15 +224,16 @@ Response:
 Response:
 ```json
 {
-    "success": true,
-    "data": [
-        {
-            "date": "01-02-2008",
-            "totalValue": 2012.7,
-            "profitLoss": 2012.7
-        }
-    ]
+  "success": true,
+  "data": [
+    {
+      "date": "01-02-2008",
+      "totalValue": 2012.7,
+      "profitLoss": 2012.7
+    }
+  ]
 }
+
 ```
 
 ### Remove Fund from Portfolio
