@@ -181,6 +181,7 @@ Response:
 ```
 ### Current Portfolio List
 **GET** `http://localhost:5000/api/portfolio/value`
+
 Response:
 ```json
 {
