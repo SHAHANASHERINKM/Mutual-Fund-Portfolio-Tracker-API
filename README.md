@@ -639,6 +639,32 @@ Response:
 
 ---
 
+##  Live API
+The backend is deployed on **Render** and can be accessed at:
+■ https://mutual-fund-portfolio-tracker-api-lvlr.onrender.com
+
+### ■ How to Test with Postman
+1. **Open Postman** (or any API client).
+2. Create a new request.
+3. Enter the API URL (for example, the signup route):
+https://mutual-fund-portfolio-tracker-api-lvlr.onrender.com/api/auth/signup
+
+4. Select **POST** method.
+5. Go to the **Body** tab → select **raw** → choose **JSON**.
+6. Add your credentials in JSON format, e.g.:
+
+{
+"name": "demoUser",
+"email":"user@example.com",
+"password": "demoPass"
+}
+7. Click **Send** → you will receive a JSON response from the API.
+
+### ■ Testing GET Routes
+- GET routes can be tested directly in Postman or in the browser.
+- Example (replace with your actual route):
+https://mutual-fund-portfolio-tracker-api-lvlr.onrender.com/api/funds
+
 ## Postman Collection
 A full **Postman Collection** (`mutual-fund-portfolio-api.postman_collection.json`) is included for testing all endpoints.  
 
