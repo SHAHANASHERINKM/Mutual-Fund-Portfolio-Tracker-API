@@ -32,6 +32,7 @@ The system automatically updates NAV (Net Asset Value) daily using external APIs
 
 ---
 ## Project Folder Structure
+
 ````
 Mutual-Fund-Portfolio-Tracker-API/
 ├── jobs/                                      # Cron jobs for scheduled tasks
@@ -49,7 +50,9 @@ Mutual-Fund-Portfolio-Tracker-API/
 ├── package-lock.json                          # Dependency lock file
 └── package.json                               # Project metadata and dependencies  convert this to a readme file
 ```
+
 ---
+
 ##  Setup Instructions
 
 ### 1. Clone Repository
