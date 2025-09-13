@@ -31,10 +31,8 @@ The system automatically updates NAV (Net Asset Value) daily using external APIs
 - **External Data**: axios (fetch NAV APIs)  
 
 ---
-
-## Project Folder Structure
-
-````
+## Project Structure
+```
 Mutual-Fund-Portfolio-Tracker-API/
 ├── jobs/                                      # Cron jobs for scheduled tasks
 ├── node_modules/                              # Installed dependencies
@@ -54,7 +52,7 @@ Mutual-Fund-Portfolio-Tracker-API/
 
 ---
 
-##  Setup Instructions
+## Setup Instructions
 
 ### 1. Clone Repository
 ```bash
